@@ -1,0 +1,11 @@
+module vga_draw (
+	input logic vga_clk,
+	input logic reset,
+	input logic [9:0] x,
+	input logic [8:0] y,
+	
+	input logic [1:0] entity,
+	output logic [3:0] red,
+	output logic [3:0] green,
+	output logic [3:0] blue,
+);

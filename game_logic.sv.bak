@@ -1,0 +1,37 @@
+module game_logic (
+	input logic vga_clk,
+	input logic [1:0] direction,
+	input logic [9:0] x_in,
+	input logic [8:0] y_in,
+	output logic [0:1] entity,
+	output logic game_over,
+	output logic game_won,
+	output logic `TAIL_SIZE tail_count
+);
+	logic [9:0] curr_x;
+	logic [8:0] curr_y;
+	
+	logic [9:0] snake_head_x;
+	logic [8:0] snake_head_y;
+	logic [9:0] fruit_x;
+	logic [8:0] fruit_y;
+	
+	logic is_tail;
+	
+	logic tails;
+	
+	logic [5:0] rand_num_x_orig, rand_num_y_orig, rand_num_x_fit, rand_num_y_fit;
+	
+	random_num_gen_63 rng_x (
+		.clk(update_clk),
+		.seed(6'b100_110),
+		.rnd(rand_num_x_orig)
+	);
+
+	random_num_gen_63 rng_y (
+		.clk(update_clk),
+		.seed(6'b101_001),
+		.rnd(rand_num_y_orig)
+	);
+	
+endmodule

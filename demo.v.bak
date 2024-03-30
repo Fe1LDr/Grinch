@@ -171,8 +171,8 @@ module demo (
     end
    
   //------------------------ VGA outputs                   ----------------------------// 
-    assign    red     = stick_active ? ( indicator ? 4'hf : rom_data[11:8]) : (SW[2] ? 4'h8 : 4'h0); 
+    assign    red     = stick_active ? ( indicator ? 4'hf : rom_data[11:8]) : (SW[0] ? 4'h8 : 4'h0); 
     assign    green   = stick_active ? ( indicator ? 4'hf : rom_data[7:4] ) : (SW[1] ? 4'h8 : 4'h0);
-    assign    blue    = stick_active ? ( indicator ? 4'hf : rom_data[3:0] ) : (SW[0] ? 4'h8 : 4'h0);
+    assign    blue    = stick_active ? ( indicator ? 4'hf : rom_data[3:0] ) : (SW[2] ? 4'h8 : 4'h0);
 
 endmodule
