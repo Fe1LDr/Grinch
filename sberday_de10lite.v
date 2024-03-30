@@ -161,28 +161,12 @@ module sberday_de10lite (
       assign LEDR [9:2] = 8'h00;
     //----------------------- Seven Segments Indicators    --------------------------//
       seg7e seven_segment_indicator_1 (
-        .bcd  ( game_score[7:4] ), // <= PUT YOUR BINARY VALUE HERE
+        .bcd  ( game_score[3:0] ), // <= PUT YOUR BINARY VALUE HERE
         .seg  ( HEX0 )
       );
       seg7 seven_segment_indicator_2 (
-        .bcd  ( direction ), // <= PUT YOUR BINARY VALUE HERE
+        .bcd  ( game_score[7:4] ), // <= PUT YOUR BINARY VALUE HERE
         .seg  ( HEX1 )
-      );
-      seg7e seven_segment_indicator_3 (
-        .bcd  ( blue ), // <= PUT YOUR BINARY VALUE HERE
-        .seg  ( HEX2 )
-      );
-      seg7e seven_segment_indicator_4 (
-        .bcd  ( green ), // <= PUT YOUR BINARY VALUE HERE
-        .seg  ( HEX3 )
-      );
-      seg7 seven_segment_indicator_5 (
-        .bcd  ( arst_n ), // <= PUT YOUR BINARY VALUE HERE
-        .seg  ( HEX4 )
-      );
-      seg7e seven_segment_indicator_6 (
-        .bcd  ( ent[1:0] ), // <= PUT YOUR BINARY VALUE HERE
-        .seg  ( HEX5 )
       );
     //----------------------- Accelerometer                --------------------------//
       accel accelerometer (
@@ -256,7 +240,7 @@ module sberday_de10lite (
 		.x(col[9:0]),
 		.y(row[8:0]),
 	
-		.entity(ent),
+		.pic_type(ent),
 		.red(red),
 		.green(green),
 		.blue(blue)
@@ -277,6 +261,52 @@ module sberday_de10lite (
 			direction = 2'b11;
 	 end
 	 
+	 reg [11:0] count;
+	 
+	 always @ ( posedge vga_clk or negedge arst_n) begin 
+      if      ( !arst_n )  
+        count <= 32'b0;
+      else if ( count < 32'd1_00000000 )
+        count <= count + 1'b1;
+		else count <= 32'b0;
+    end
+	
+	 wire win;
+	 wire over;
+	 
+	 reg [7:0] H5;
+	 reg [7:0] H4;
+	 reg [7:0] H3;
+	 reg [7:0] H2;
+	 
+	 always @ (posedge vga_clk or negedge arst_n) begin
+		if (!arst_n) begin
+			H5 <= 8'b1100_0000;
+			H4 <= 8'b1100_0000;
+			H3 <= 8'b1100_0000;
+			H2 <= 8'b1100_0000;
+		end
+		else begin
+			if (win) begin
+				H5 <= 8'b11000010;
+				H4 <= 8'b11000000;
+				H3 <= 8'b10001000;
+				H2 <= 8'b11000111;
+			end
+			else if (over) begin
+				H5 <= 8'b11000111;
+				H4 <= 8'b11000000;
+				H3 <= 8'b10010010;
+				H2 <= 8'b10000110;
+			end
+		end
+	 end
+	 
+	 assign HEX5 = H5;
+	 assign HEX4 = H4;
+	 assign HEX3 = H3;
+	 assign HEX2 = H2;
+	 
 	 game_logic game (
 	     .vga_clk (vga_clk),
 		  .update_clk (update_clk),
@@ -284,10 +314,12 @@ module sberday_de10lite (
 		  .direction(direction),
 		  .x_in(col[9:0]),
 		  .y_in(row[8:0]),
-		  .entity(ent),
-		  //.game_over,
-		  //.game_won,
-		  .tail_count(game_score)
+		  .pic_type(ent),
+		  .count(count),
+		  .game_over(over),
+		  .game_win(win),
+		  .gift_count(game_score),
+		  .sw_i(SW[0])
 	 );
 	 
 	 wire update_clk;

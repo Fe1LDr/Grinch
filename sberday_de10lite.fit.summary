@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Mar 30 16:16:37 2024
+Fitter Status : Successful - Sat Mar 30 18:41:59 2024
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : sberday_de10lite
 Top-level Entity Name : sberday_de10lite
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 4,490 / 49,760 ( 9 % )
-    Total combinational functions : 4,459 / 49,760 ( 9 % )
-    Dedicated logic registers : 1,775 / 49,760 ( 4 % )
-Total registers : 1775
+Total logic elements : 4,613 / 49,760 ( 9 % )
+    Total combinational functions : 4,472 / 49,760 ( 9 % )
+    Dedicated logic registers : 1,813 / 49,760 ( 4 % )
+Total registers : 1813
 Total pins : 185 / 360 ( 51 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

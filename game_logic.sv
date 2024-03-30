@@ -5,55 +5,54 @@ module game_logic (
 	input logic [1:0] direction,
 	input logic [9:0] x_in,
 	input logic [8:0] y_in,
-	output logic [1:0] entity,
+	input logic [11:0] count,
+	output logic [1:0] pic_type,
 	output logic game_over,
-	output logic game_won,
-	output logic [7:0] tail_count
+	output logic game_win,
+	output logic [7:0] gift_count,
+	input logic sw_i
 );
 	logic [5:0] curr_x;
 	logic [5:0] curr_y;
 	
-	logic [5:0] snake_head_x;
-	logic [5:0] snake_head_y;
-	logic [5:0] fruit_x;
-	logic [5:0] fruit_y;
+	logic [5:0] grinch_x;
+	logic [5:0] grinch_y;
+	logic [5:0] gift_x;
+	logic [5:0] gift_y;
 	
-	logic is_tail;
+	logic is_wall;
 	
-	logic [11:0] tails [0:127];
+	logic [11:0] walls [0:127];
 	
-	logic [5:0] rand_num_x;
-	logic [5:0] rand_num_y;
+	logic [5:0] num_x;
+	logic [5:0] num_y;
 	
-	always @(posedge update_clk) begin
-		rand_num_x = 10 % 640;
-		rand_num_y = 10 % 480;
-	end
-	
-	initial begin
-		fruit_x <= 20;
-		fruit_y <= 20;
-		snake_head_x <= 10;
-		snake_head_y <= 10;
-		tail_count <= 0;
-		game_won <= 0;
+	initial begin	
+		gift_x <= 20;
+		gift_y <= 20;
+		grinch_x <= 10;
+		grinch_y <= 10;
+		gift_count <= 0;
+		game_win <= 0;
 		game_over <= 0;
 	end
 	
 	assign curr_x = (x_in / 16);
 	assign curr_y = (y_in / 16);
 	
-	always @(posedge vga_clk) begin 
-		if (curr_x == snake_head_x && curr_y == snake_head_y) begin
-			entity <= 2'b01;
+	always @(posedge vga_clk) begin
+		num_x <= count % 36;
+		num_y <= count % 26;
+		if (curr_x == grinch_x && curr_y == grinch_y) begin
+			pic_type <= 2'b01;
 		end
-		else if (curr_x == fruit_x && curr_y == fruit_y) begin
-			entity <= 2'b00;
+		else if (curr_x == gift_x && curr_y == gift_y) begin
+			pic_type <= 2'b00;
 		end
-		else if (is_tail) begin
-			entity <= 2'b10;
+		else if (is_wall) begin
+			pic_type <= 2'b10;
 		end
-		else entity <= 2'b11;
+		else pic_type <= 2'b11;
 	end
 
 	always @(posedge vga_clk or negedge reset) begin 
@@ -62,14 +61,21 @@ module game_logic (
 			game_over = 0;
 		end
 		else begin
-			is_tail = 0;
-			for (i = 0; i < 128; i++) begin
-				if (i < tail_count) begin 
-					if (tails[i] == {curr_x, curr_y}) begin
-						is_tail = 1;
+			is_wall = 0;
+			for (i = 0; i < 128; i = i + 1) begin
+				if (i < gift_count) begin 
+					if (sw_i) begin
+						if (walls[i] == {num_x, num_y}) begin
+							is_wall = 1;
+						end	
+					end
+					else begin
+						if (walls[i] == {curr_x, curr_y}) begin
+							is_wall = 1;
+						end
 					end
 					
-					if (tails[i] == {snake_head_x, snake_head_y}) begin
+					if (walls[i] == {grinch_x, grinch_y} | game_win) begin
 						game_over = 1;
 					end
 				end
@@ -79,23 +85,23 @@ module game_logic (
 	
 	always @(posedge update_clk or negedge reset) begin
 		if (~reset) begin
-			snake_head_x <= 16;
-			snake_head_y <= 16;
+			grinch_x <= 16;
+			grinch_y <= 16;
 		end
 		else begin 
 			if (~game_over) begin
 				case (direction)
 					2'b00: begin 
-						snake_head_x <= (snake_head_x == 0) ? 39 : snake_head_x - 1;
+						grinch_x <= (grinch_x == 0) ? 39 : grinch_x - 1;
 					end
 					2'b01: begin 
-						snake_head_y <= (snake_head_y == 29) ? 0 : snake_head_y + 1;
+						grinch_y <= (grinch_y == 0) ? 29 : grinch_y - 1;
 					end
 					2'b10: begin 
-						snake_head_x <= (snake_head_x == 39) ? 0 : snake_head_x + 1;
+						grinch_x <= (grinch_x == 39) ? 0 : grinch_x + 1;
 					end
 					2'b11: begin 
-						snake_head_y <= (snake_head_y == 0) ? 39 : snake_head_x - 1;
+						grinch_y <= (grinch_y == 29) ? 0 : grinch_y + 1;
 					end
 				endcase
 			end
@@ -103,28 +109,27 @@ module game_logic (
 	end
 	
 	always @(posedge update_clk or negedge reset) begin
-		integer i;
 		if (~reset) begin
-			fruit_x = 20;
-			fruit_y = 20;
-			tail_count <= 0;
+			gift_x = 20;
+			gift_y = 20;
+			gift_count <= 0;
 		end
 		else begin 
-			if (snake_head_x == fruit_x && snake_head_y == fruit_y) begin
-				if (tail_count < 128) begin
-					tails[tail_count] <= {snake_head_x, snake_head_y};
-					tail_count <= tail_count + 1;
+			if (grinch_x == gift_x && grinch_y == gift_y) begin
+				if (gift_count < 128) begin
+					walls[gift_count] <= {grinch_x, grinch_y};
+					gift_count <= gift_count + 1;
 				end
-				fruit_x <= rand_num_x;
-				fruit_y <= rand_num_y;
-			end
-			else begin
-				for (i = 0; i < 128; i++) begin
-					if (i == (tail_count - 1)) begin
-						tails[i] <= {snake_head_x, snake_head_y};
+				if (sw_i) begin
+					if (~is_wall) begin
+						gift_x <= count % 36;
+						gift_y <= count % 26;
 					end
-					if (i != 127) begin
-						tails[i] <= tails[i + 1];
+				end
+				else begin
+					if (~is_wall) begin
+						gift_x <= num_x;
+						gift_y <= num_y;
 					end
 				end
 			end
@@ -133,10 +138,10 @@ module game_logic (
 	
 	always @(posedge update_clk or negedge reset) begin
 		if (~reset) begin
-			game_won <= 0;
+			game_win <= 0;
 		end
-		else if (tail_count == 128) begin
-			game_won <= 1;
+		else if (gift_count == 10) begin
+			game_win <= 1;
 		end
 	end
 	

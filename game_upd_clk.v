@@ -5,53 +5,32 @@ module game_upd_clk (
 	output reg out_clk
 );
 	reg was_updated;
-	reg [2:0] drawing_cycles_passed;
+	reg [2:0] cycles;
 
-	initial
-	begin
-		drawing_cycles_passed <= 0;
+	initial begin
+		cycles <= 0;
 	end
 
-	// calculate whether the screen has been updated
-	always @(posedge in_clk)
-	begin
-		if (out_clk)
-		begin
+	always @(posedge in_clk) begin
+		if (out_clk) begin
 			was_updated <= 1;
 		end
-		else
-		begin
-			was_updated <=(drawing_cycles_passed == 5) ? 1 : 0;
+		else begin
+			was_updated <=(cycles == 5) ? 1 : 0;
 		end
 	end
 
-	// calculate whether game state can be updated at this clock cycle
-	always @(posedge in_clk)
-	begin
-		out_clk <=
-			(
-				~was_updated && (drawing_cycles_passed == 5)
-			);
+	always @(posedge in_clk) begin
+		out_clk <= (~was_updated && (cycles == 5));
 	end
 
-	// calculate number of times screen was fully drawn
-	always @(posedge in_clk or negedge reset)
-	begin
-		if (!reset)
-		begin
-			drawing_cycles_passed <= 0;
+	always @(posedge in_clk or negedge reset) begin
+		if (!reset) begin
+			cycles <= 0;
 		end
-		else
-		begin
-			if (
-				(x_in == 39) &&
-				(y_in == 29)
-			)
-			begin
-				drawing_cycles_passed <=
-					(drawing_cycles_passed == 5) ?
-						0:
-						drawing_cycles_passed + 1;
+		else begin
+			if ((x_in == 39) && (y_in == 29)) begin
+				cycles <= (cycles == 5) ? 0: cycles + 1;
 			end
 		end
 	end

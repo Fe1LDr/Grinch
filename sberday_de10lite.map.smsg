@@ -1,5 +1,5 @@
-Info (10281): Verilog HDL Declaration information at spi_serdes.v(4): object "spi_clk" differs only in case from object "SPI_CLK" in the same scope File: C:/MIET/Snake/spi_serdes.v Line: 4
-Info (10281): Verilog HDL Declaration information at spi_serdes.v(23): object "READ" differs only in case from object "read" in the same scope File: C:/MIET/Snake/spi_serdes.v Line: 23
-Info (10281): Verilog HDL Declaration information at spi_control.v(12): object "spi_clk" differs only in case from object "SPI_CLK" in the same scope File: C:/MIET/Snake/spi_control.v Line: 12
-Warning (10268): Verilog HDL information at game_logic.sv(105): always construct contains both blocking and non-blocking assignments File: C:/MIET/Snake/game_logic.sv Line: 105
-Warning (10273): Verilog HDL warning at altera_modular_adc_control_fsm.v(718): extended using "x" or "z" File: C:/MIET/Snake/db/ip/adc0/submodules/altera_modular_adc_control_fsm.v Line: 718
+Info (10281): Verilog HDL Declaration information at spi_serdes.v(4): object "spi_clk" differs only in case from object "SPI_CLK" in the same scope File: C:/MIET/Grinch/spi_serdes.v Line: 4
+Info (10281): Verilog HDL Declaration information at spi_serdes.v(23): object "READ" differs only in case from object "read" in the same scope File: C:/MIET/Grinch/spi_serdes.v Line: 23
+Info (10281): Verilog HDL Declaration information at spi_control.v(12): object "spi_clk" differs only in case from object "SPI_CLK" in the same scope File: C:/MIET/Grinch/spi_control.v Line: 12
+Warning (10268): Verilog HDL information at game_logic.sv(111): always construct contains both blocking and non-blocking assignments File: C:/MIET/Grinch/game_logic.sv Line: 111
+Warning (10273): Verilog HDL warning at altera_modular_adc_control_fsm.v(718): extended using "x" or "z" File: C:/MIET/Grinch/db/ip/adc0/submodules/altera_modular_adc_control_fsm.v Line: 718
