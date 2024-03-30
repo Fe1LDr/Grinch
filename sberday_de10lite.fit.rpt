@@ -1,5 +1,5 @@
 Fitter report for sberday_de10lite
-Sat Mar 30 14:55:20 2024
+Sat Mar 30 16:16:37 2024
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -71,17 +71,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Mar 30 14:55:19 2024       ;
+; Fitter Status                      ; Successful - Sat Mar 30 16:16:37 2024       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; sberday_de10lite                            ;
 ; Top-level Entity Name              ; sberday_de10lite                            ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 4,544 / 49,760 ( 9 % )                      ;
-;     Total combinational functions  ; 4,490 / 49,760 ( 9 % )                      ;
-;     Dedicated logic registers      ; 1,777 / 49,760 ( 4 % )                      ;
-; Total registers                    ; 1777                                        ;
+; Total logic elements               ; 4,490 / 49,760 ( 9 % )                      ;
+;     Total combinational functions  ; 4,459 / 49,760 ( 9 % )                      ;
+;     Dedicated logic registers      ; 1,775 / 49,760 ( 4 % )                      ;
+; Total registers                    ; 1775                                        ;
 ; Total pins                         ; 185 / 360 ( 51 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -157,18 +157,18 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 2.19        ;
+; Average used               ; 2.17        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.3%      ;
-;     Processor 3            ;   8.3%      ;
-;     Processor 4            ;   8.2%      ;
-;     Processor 5            ;   8.1%      ;
-;     Processor 6            ;   8.1%      ;
-;     Processor 7            ;   8.1%      ;
-;     Processor 8            ;   8.0%      ;
+;     Processor 2            ;   7.9%      ;
+;     Processor 3            ;   7.9%      ;
+;     Processor 4            ;   7.9%      ;
+;     Processor 5            ;   7.9%      ;
+;     Processor 6            ;   7.9%      ;
+;     Processor 7            ;   7.9%      ;
+;     Processor 8            ;   7.8%      ;
 ;     Processors 9-16        ;   7.8%      ;
 +----------------------------+-------------+
 
@@ -179,8 +179,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 6732 ) ; 0.00 % ( 0 / 6732 )        ; 0.00 % ( 0 / 6732 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 6732 ) ; 0.00 % ( 0 / 6732 )        ; 0.00 % ( 0 / 6732 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 6699 ) ; 0.00 % ( 0 / 6699 )        ; 0.00 % ( 0 / 6699 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 6699 ) ; 0.00 % ( 0 / 6699 )        ; 0.00 % ( 0 / 6699 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -203,8 +203,8 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 6711 )   ; N/A                     ; Source File       ; N/A                 ;       ;
-; hard_block:auto_generated_inst ; 0.00 % ( 0 / 21 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 6679 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; hard_block:auto_generated_inst ; 0.00 % ( 0 / 20 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
 
@@ -219,26 +219,26 @@ The pin-out file can be found in C:/MIET/Snake/sberday_de10lite.pin.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 4,544 / 49,760 ( 9 % ) ;
-;     -- Combinational with no register       ; 2767                   ;
-;     -- Register only                        ; 54                     ;
-;     -- Combinational with a register        ; 1723                   ;
+; Total logic elements                        ; 4,490 / 49,760 ( 9 % ) ;
+;     -- Combinational with no register       ; 2715                   ;
+;     -- Register only                        ; 31                     ;
+;     -- Combinational with a register        ; 1744                   ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 2494                   ;
-;     -- 3 input functions                    ; 994                    ;
-;     -- <=2 input functions                  ; 1002                   ;
-;     -- Register only                        ; 54                     ;
+;     -- 4 input functions                    ; 2518                   ;
+;     -- 3 input functions                    ; 1214                   ;
+;     -- <=2 input functions                  ; 727                    ;
+;     -- Register only                        ; 31                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 4350                   ;
-;     -- arithmetic mode                      ; 140                    ;
+;     -- normal mode                          ; 4335                   ;
+;     -- arithmetic mode                      ; 124                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 1,777 / 51,509 ( 3 % ) ;
-;     -- Dedicated logic registers            ; 1,777 / 49,760 ( 4 % ) ;
+; Total registers*                            ; 1,775 / 51,509 ( 3 % ) ;
+;     -- Dedicated logic registers            ; 1,775 / 49,760 ( 4 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 377 / 3,110 ( 12 % )   ;
+; Total LABs:  partially or completely used   ; 344 / 3,110 ( 11 % )   ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 185 / 360 ( 51 % )     ;
 ;     -- Clock pins                           ; 4 / 8 ( 50 % )         ;
@@ -258,12 +258,12 @@ The pin-out file can be found in C:/MIET/Snake/sberday_de10lite.pin.
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 3.6% / 3.3% / 4.1%     ;
-; Peak interconnect usage (total/H/V)         ; 33.8% / 31.2% / 37.4%  ;
+; Average interconnect usage (total/H/V)      ; 3.4% / 3.0% / 3.8%     ;
+; Peak interconnect usage (total/H/V)         ; 32.0% / 28.0% / 37.7%  ;
 ; Maximum fan-out                             ; 1655                   ;
 ; Highest non-global fan-out                  ; 1655                   ;
-; Total fan-out                               ; 20725                  ;
-; Average fan-out                             ; 3.06                   ;
+; Total fan-out                               ; 20913                  ;
+; Average fan-out                             ; 3.11                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -276,26 +276,26 @@ The pin-out file can be found in C:/MIET/Snake/sberday_de10lite.pin.
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 4544 / 49760 ( 9 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 2767                 ; 0                              ;
-;     -- Register only                        ; 54                   ; 0                              ;
-;     -- Combinational with a register        ; 1723                 ; 0                              ;
+; Total logic elements                        ; 4490 / 49760 ( 9 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 2715                 ; 0                              ;
+;     -- Register only                        ; 31                   ; 0                              ;
+;     -- Combinational with a register        ; 1744                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 2494                 ; 0                              ;
-;     -- 3 input functions                    ; 994                  ; 0                              ;
-;     -- <=2 input functions                  ; 1002                 ; 0                              ;
-;     -- Register only                        ; 54                   ; 0                              ;
+;     -- 4 input functions                    ; 2518                 ; 0                              ;
+;     -- 3 input functions                    ; 1214                 ; 0                              ;
+;     -- <=2 input functions                  ; 727                  ; 0                              ;
+;     -- Register only                        ; 31                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 4350                 ; 0                              ;
-;     -- arithmetic mode                      ; 140                  ; 0                              ;
+;     -- normal mode                          ; 4335                 ; 0                              ;
+;     -- arithmetic mode                      ; 124                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 1777                 ; 0                              ;
-;     -- Dedicated logic registers            ; 1777 / 49760 ( 4 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 1775                 ; 0                              ;
+;     -- Dedicated logic registers            ; 1775 / 49760 ( 4 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 377 / 3110 ( 12 % )  ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 344 / 3110 ( 11 % )  ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 185                  ; 0                              ;
@@ -303,27 +303,27 @@ The pin-out file can be found in C:/MIET/Snake/sberday_de10lite.pin.
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
 ; PLL                                         ; 0 / 4 ( 0 % )        ; 1 / 4 ( 25 % )                 ;
-; Clock control block                         ; 1 / 24 ( 4 % )       ; 4 / 24 ( 16 % )                ;
+; Clock control block                         ; 2 / 24 ( 8 % )       ; 3 / 24 ( 12 % )                ;
 ; User Flash Memory                           ; 1 / 1 ( 100 % )      ; 0 / 1 ( 0 % )                  ;
 ; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )      ; 0 / 2 ( 0 % )                  ;
 ;                                             ;                      ;                                ;
 ; Connections                                 ;                      ;                                ;
-;     -- Input Connections                    ; 1849                 ; 1                              ;
-;     -- Registered Input Connections         ; 1777                 ; 0                              ;
-;     -- Output Connections                   ; 72                   ; 1778                           ;
+;     -- Input Connections                    ; 290                  ; 1                              ;
+;     -- Registered Input Connections         ; 218                  ; 0                              ;
+;     -- Output Connections                   ; 72                   ; 219                            ;
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 20726                ; 1792                           ;
-;     -- Registered Connections               ; 11538                ; 0                              ;
+;     -- Total Connections                    ; 20915                ; 232                            ;
+;     -- Registered Connections               ; 10391                ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
-;     -- Top                                  ; 142                  ; 1779                           ;
-;     -- hard_block:auto_generated_inst       ; 1779                 ; 0                              ;
+;     -- Top                                  ; 142                  ; 220                            ;
+;     -- hard_block:auto_generated_inst       ; 220                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 17                   ; 1                              ;
-;     -- Output Ports                         ; 97                   ; 4                              ;
+;     -- Output Ports                         ; 97                   ; 3                              ;
 ;     -- Bidir Ports                          ; 71                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -1084,28 +1084,28 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------+---------------------------------------------------------------------+
 ; SDC pin name                  ; pll_inst|altpll_component|auto_generated|pll1                       ;
 ; PLL mode                      ; Normal                                                              ;
-; Compensate clock              ; clock4                                                              ;
+; Compensate clock              ; clock1                                                              ;
 ; Compensated input/output pins ; --                                                                  ;
 ; Switchover type               ; --                                                                  ;
 ; Input frequency 0             ; 50.0 MHz                                                            ;
 ; Input frequency 1             ; --                                                                  ;
 ; Nominal PFD frequency         ; 50.0 MHz                                                            ;
-; Nominal VCO frequency         ; 500.0 MHz                                                           ;
+; Nominal VCO frequency         ; 600.0 MHz                                                           ;
 ; VCO post scale K counter      ; 2                                                                   ;
 ; VCO frequency control         ; Auto                                                                ;
-; VCO phase shift step          ; 250 ps                                                              ;
+; VCO phase shift step          ; 208 ps                                                              ;
 ; VCO multiply                  ; --                                                                  ;
 ; VCO divide                    ; --                                                                  ;
-; Freq min lock                 ; 30.0 MHz                                                            ;
-; Freq max lock                 ; 65.02 MHz                                                           ;
+; Freq min lock                 ; 25.0 MHz                                                            ;
+; Freq max lock                 ; 54.18 MHz                                                           ;
 ; M VCO Tap                     ; 0                                                                   ;
 ; M Initial                     ; 1                                                                   ;
-; M value                       ; 10                                                                  ;
+; M value                       ; 12                                                                  ;
 ; N value                       ; 1                                                                   ;
 ; Charge pump current           ; setting 1                                                           ;
 ; Loop filter resistance        ; setting 27                                                          ;
 ; Loop filter capacitance       ; setting 0                                                           ;
-; Bandwidth                     ; 1.03 MHz to 1.97 MHz                                                ;
+; Bandwidth                     ; 680 kHz to 980 kHz                                                  ;
 ; Bandwidth type                ; Medium                                                              ;
 ; Real time reconfigurable      ; Off                                                                 ;
 ; Scan chain MIF file           ; --                                                                  ;
@@ -1123,10 +1123,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------------------------------------------------+--------------+------+-----+------------------+-----------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+------------------------------------------------------+
 ; Name                                                                            ; Output Clock ; Mult ; Div ; Output Frequency ; Phase Shift     ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low   ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                         ;
 +---------------------------------------------------------------------------------+--------------+------+-----+------------------+-----------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+------------------------------------------------------+
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; clock1       ; 1    ; 2   ; 25.0 MHz         ; 0 (0 ps)        ; 2.25 (250 ps)    ; 50/50      ; C1      ; 20            ; 10/10 Even   ; --            ; 1       ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[1] ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; clock2       ; 1    ; 25  ; 2.0 MHz          ; 0 (0 ps)        ; 0.18 (250 ps)    ; 50/50      ; C2      ; 250           ; 125/125 Even ; --            ; 1       ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[2] ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] ; clock3       ; 1    ; 25  ; 2.0 MHz          ; 270 (375000 ps) ; 0.18 (250 ps)    ; 50/50      ; C3      ; 250           ; 125/125 Even ; --            ; 188     ; 4       ; pll_inst|altpll_component|auto_generated|pll1|clk[3] ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[4] ; clock4       ; 1    ; 50  ; 1.0 MHz          ; 0 (0 ps)        ; 0.09 (250 ps)    ; 50/50      ; C0      ; 500           ; 250/250 Even ; --            ; 1       ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[4] ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; clock1       ; 1    ; 2   ; 25.0 MHz         ; 0 (0 ps)        ; 1.88 (208 ps)    ; 50/50      ; C0      ; 24            ; 12/12 Even   ; --            ; 1       ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[1] ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; clock2       ; 1    ; 25  ; 2.0 MHz          ; 0 (0 ps)        ; 0.15 (208 ps)    ; 50/50      ; C1      ; 300           ; 150/150 Even ; --            ; 1       ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[2] ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] ; clock3       ; 1    ; 25  ; 2.0 MHz          ; 270 (375000 ps) ; 0.15 (208 ps)    ; 50/50      ; C2      ; 300           ; 150/150 Even ; --            ; 226     ; 0       ; pll_inst|altpll_component|auto_generated|pll1|clk[3] ;
 +---------------------------------------------------------------------------------+--------------+------+-----+------------------+-----------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+------------------------------------------------------+
 
 
@@ -1311,24 +1310,25 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node           ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                              ; Entity Name      ; Library Name ;
 +--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------+------------------+--------------+
-; |sberday_de10lite                    ; 4544 (24)   ; 1777 (14)                 ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 2767 (9)     ; 54 (14)           ; 1723 (1)         ; 0          ; |sberday_de10lite                                                                ; sberday_de10lite ; work         ;
-;    |accel:accelerometer|             ; 83 (0)      ; 51 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (0)       ; 5 (0)             ; 46 (0)           ; 0          ; |sberday_de10lite|accel:accelerometer                                            ; accel            ; work         ;
-;       |spi_control:spi_ctrl|         ; 83 (52)     ; 51 (31)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (21)      ; 5 (1)             ; 46 (30)          ; 0          ; |sberday_de10lite|accel:accelerometer|spi_control:spi_ctrl                       ; spi_control      ; work         ;
-;          |spi_serdes:serdes|         ; 31 (31)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 4 (4)             ; 16 (16)          ; 0          ; |sberday_de10lite|accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes     ; spi_serdes       ; work         ;
+; |sberday_de10lite                    ; 4490 (24)   ; 1775 (14)                 ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 2715 (10)    ; 31 (14)           ; 1744 (0)         ; 0          ; |sberday_de10lite                                                                ; sberday_de10lite ; work         ;
+;    |accel:accelerometer|             ; 82 (0)      ; 51 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (0)       ; 4 (0)             ; 47 (0)           ; 0          ; |sberday_de10lite|accel:accelerometer                                            ; accel            ; work         ;
+;       |spi_control:spi_ctrl|         ; 82 (52)     ; 51 (31)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (21)      ; 4 (1)             ; 47 (30)          ; 0          ; |sberday_de10lite|accel:accelerometer|spi_control:spi_ctrl                       ; spi_control      ; work         ;
+;          |spi_serdes:serdes|         ; 30 (30)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 3 (3)             ; 17 (17)          ; 0          ; |sberday_de10lite|accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes     ; spi_serdes       ; work         ;
 ;    |button_debouncer:dbns_a|         ; 26 (26)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 18 (18)          ; 0          ; |sberday_de10lite|button_debouncer:dbns_a                                        ; button_debouncer ; work         ;
 ;    |button_debouncer:dbns_b|         ; 26 (26)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 18 (18)          ; 0          ; |sberday_de10lite|button_debouncer:dbns_b                                        ; button_debouncer ; work         ;
 ;    |button_debouncer:dbns_c|         ; 26 (26)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 18 (18)          ; 0          ; |sberday_de10lite|button_debouncer:dbns_c                                        ; button_debouncer ; work         ;
 ;    |button_debouncer:dbns_d|         ; 26 (26)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 18 (18)          ; 0          ; |sberday_de10lite|button_debouncer:dbns_d                                        ; button_debouncer ; work         ;
 ;    |button_debouncer:dbns_e|         ; 24 (24)     ; 19 (19)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 18 (18)          ; 0          ; |sberday_de10lite|button_debouncer:dbns_e                                        ; button_debouncer ; work         ;
-;    |game_logic:game|                 ; 4199 (4199) ; 1568 (1568)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2631 (2631)  ; 24 (24)           ; 1544 (1544)      ; 0          ; |sberday_de10lite|game_logic:game                                                ; game_logic       ; work         ;
+;    |game_logic:game|                 ; 4085 (4085) ; 1561 (1561)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2524 (2524)  ; 1 (1)             ; 1560 (1560)      ; 0          ; |sberday_de10lite|game_logic:game                                                ; game_logic       ; work         ;
+;    |game_upd_clk:upd_clk|            ; 13 (13)     ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 1 (1)             ; 4 (4)            ; 0          ; |sberday_de10lite|game_upd_clk:upd_clk                                           ; game_upd_clk     ; work         ;
 ;    |pll:pll_inst|                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|pll:pll_inst                                                   ; pll              ; work         ;
 ;       |altpll:altpll_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|pll:pll_inst|altpll:altpll_component                           ; altpll           ; work         ;
 ;          |pll_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated ; pll_altpll       ; work         ;
 ;    |seg7:seven_segment_indicator_2|  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|seg7:seven_segment_indicator_2                                 ; seg7             ; work         ;
 ;    |seg7e:seven_segment_indicator_1| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|seg7e:seven_segment_indicator_1                                ; seg7e            ; work         ;
-;    |seg7e:seven_segment_indicator_6| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|seg7e:seven_segment_indicator_6                                ; seg7e            ; work         ;
+;    |seg7e:seven_segment_indicator_6| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |sberday_de10lite|seg7e:seven_segment_indicator_6                                ; seg7e            ; work         ;
 ;    |vga_controller:control|          ; 58 (58)     ; 42 (42)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 2 (2)             ; 40 (40)          ; 0          ; |sberday_de10lite|vga_controller:control                                         ; vga_controller   ; work         ;
-;    |vga_draw:comb_112|               ; 40 (40)     ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (37)      ; 0 (0)             ; 3 (3)            ; 0          ; |sberday_de10lite|vga_draw:comb_112                                              ; vga_draw         ; work         ;
+;    |vga_draw:comb_112|               ; 88 (88)     ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 85 (85)      ; 0 (0)             ; 3 (3)            ; 0          ; |sberday_de10lite|vga_draw:comb_112                                              ; vga_draw         ; work         ;
 +--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1613,15 +1613,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GSENSOR_SDI                                   ;                   ;         ;
 ; GSENSOR_SDO                                   ;                   ;         ;
 ; ARDUINO_IO[2]                                 ;                   ;         ;
-;      - button_debouncer:dbns_a|sw_r[0]~feeder ; 0                 ; 6       ;
+;      - button_debouncer:dbns_a|sw_r[0]        ; 0                 ; 6       ;
 ; ARDUINO_IO[3]                                 ;                   ;         ;
-;      - button_debouncer:dbns_b|sw_r[0]~feeder ; 0                 ; 6       ;
+;      - button_debouncer:dbns_b|sw_r[0]        ; 0                 ; 6       ;
 ; ARDUINO_IO[4]                                 ;                   ;         ;
 ;      - button_debouncer:dbns_c|sw_r[0]~feeder ; 1                 ; 6       ;
 ; ARDUINO_IO[5]                                 ;                   ;         ;
-;      - button_debouncer:dbns_d|sw_r[0]        ; 0                 ; 6       ;
+;      - button_debouncer:dbns_d|sw_r[0]~feeder ; 0                 ; 6       ;
 ; ARDUINO_IO[6]                                 ;                   ;         ;
-;      - button_debouncer:dbns_e|sw_r[0]~feeder ; 1                 ; 6       ;
+;      - button_debouncer:dbns_e|sw_r[0]        ; 1                 ; 6       ;
 ; ARDUINO_IO[7]                                 ;                   ;         ;
 ; MAX10_CLK1_50                                 ;                   ;         ;
 +-----------------------------------------------+-------------------+---------+
@@ -1633,171 +1633,173 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                            ; Location           ; Fan-Out ; Usage                                 ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 ; MAX10_CLK1_50                                                                   ; PIN_P11            ; 1       ; Clock                                 ; no     ; --                   ; --               ; --                        ;
-; accel:accelerometer|spi_control:spi_ctrl|LessThan0~0                            ; LCCOMB_X47_Y3_N8   ; 17      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; accel:accelerometer|spi_control:spi_ctrl|data_tx[15]~2                          ; LCCOMB_X46_Y5_N18  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; accel:accelerometer|spi_control:spi_ctrl|data_tx[2]~4                           ; LCCOMB_X46_Y5_N26  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[3]~0           ; LCCOMB_X47_Y6_N6   ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[15]~1    ; LCCOMB_X47_Y6_N0   ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_a|sw_change_f                                             ; LCCOMB_X35_Y9_N16  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_b|sw_change_f                                             ; LCCOMB_X37_Y5_N16  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_c|sw_change_f                                             ; LCCOMB_X40_Y4_N16  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_d|sw_change_f                                             ; LCCOMB_X36_Y4_N16  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_e|sw_change_f                                             ; LCCOMB_X38_Y9_N20  ; 17      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_e|sw_state_o                                              ; FF_X38_Y9_N9       ; 166     ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; button_debouncer:dbns_e|sw_state_o                                              ; FF_X38_Y9_N9       ; 150     ; Async. clear                          ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; game_logic:game|always3~4                                                       ; LCCOMB_X35_Y17_N16 ; 1655    ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|snake_head_x[4]~0                                               ; LCCOMB_X37_Y18_N20 ; 10      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|snake_head_y[4]~1                                               ; LCCOMB_X37_Y18_N30 ; 9       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tail_count[4]~15                                                ; LCCOMB_X37_Y28_N24 ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[0][5]~1725                                                ; LCCOMB_X43_Y21_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[100][5]~735                                               ; LCCOMB_X46_Y23_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[101][5]~107                                               ; LCCOMB_X57_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[102][5]~748                                               ; LCCOMB_X40_Y21_N24 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[103][5]~1459                                              ; LCCOMB_X52_Y18_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[104][5]~121                                               ; LCCOMB_X46_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[105][5]~148                                               ; LCCOMB_X57_Y23_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[106][5]~135                                               ; LCCOMB_X49_Y12_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[107][5]~161                                               ; LCCOMB_X52_Y18_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[108][5]~165                                               ; LCCOMB_X52_Y18_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[109][5]~188                                               ; LCCOMB_X52_Y18_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[10][5]~829                                                ; LCCOMB_X40_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[110][5]~191                                               ; LCCOMB_X40_Y21_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[111][5]~1485                                              ; LCCOMB_X52_Y18_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[112][5]~216                                               ; LCCOMB_X52_Y23_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[113][5]~256                                               ; LCCOMB_X57_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[114][5]~229                                               ; LCCOMB_X41_Y27_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[115][5]~243                                               ; LCCOMB_X50_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[116][5]~948                                               ; LCCOMB_X52_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[117][5]~987                                               ; LCCOMB_X57_Y23_N24 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[118][5]~961                                               ; LCCOMB_X41_Y27_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[119][5]~1498                                              ; LCCOMB_X50_Y25_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[11][5]~842                                                ; LCCOMB_X40_Y21_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[120][5]~974                                               ; LCCOMB_X52_Y23_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[121][5]~1000                                              ; LCCOMB_X49_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[122][5]~1013                                              ; LCCOMB_X41_Y27_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[123][5]~1040                                              ; LCCOMB_X40_Y23_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[124][5]~1027                                              ; LCCOMB_X44_Y28_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[125][5]~1707                                              ; LCCOMB_X40_Y23_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[126][5]~1694                                              ; LCCOMB_X41_Y27_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[127][5]~1723                                              ; LCCOMB_X47_Y26_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[12][5]~855                                                ; LCCOMB_X40_Y23_N24 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[13][5]~868                                                ; LCCOMB_X40_Y21_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[14][5]~881                                                ; LCCOMB_X40_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[15][5]~908                                                ; LCCOMB_X41_Y27_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[16][5]~1550                                               ; LCCOMB_X46_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[17][5]~895                                                ; LCCOMB_X46_Y23_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[18][5]~1563                                               ; LCCOMB_X50_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[19][5]~922                                                ; LCCOMB_X44_Y29_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[1][5]~1472                                                ; LCCOMB_X42_Y27_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[20][5]~1566                                               ; LCCOMB_X46_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[21][5]~935                                                ; LCCOMB_X46_Y23_N24 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[22][5]~271                                                ; LCCOMB_X46_Y27_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[23][5]~1589                                               ; LCCOMB_X42_Y26_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[24][5]~275                                                ; LCCOMB_X46_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[25][5]~1602                                               ; LCCOMB_X46_Y23_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[26][5]~298                                                ; LCCOMB_X50_Y23_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[27][5]~1615                                               ; LCCOMB_X45_Y26_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[28][5]~301                                                ; LCCOMB_X49_Y29_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[29][5]~1629                                               ; LCCOMB_X54_Y25_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[2][5]~1524                                                ; LCCOMB_X40_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[30][5]~338                                                ; LCCOMB_X50_Y23_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[31][5]~1681                                               ; LCCOMB_X44_Y29_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[32][5]~325                                                ; LCCOMB_X47_Y25_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[33][5]~352                                                ; LCCOMB_X57_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[34][5]~366                                                ; LCCOMB_X50_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[35][5]~1642                                               ; LCCOMB_X47_Y23_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[36][5]~379                                                ; LCCOMB_X47_Y25_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[37][5]~392                                                ; LCCOMB_X57_Y23_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[38][5]~405                                                ; LCCOMB_X49_Y23_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[39][5]~1668                                               ; LCCOMB_X47_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[3][5]~762                                                 ; LCCOMB_X40_Y21_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[40][5]~418                                                ; LCCOMB_X47_Y25_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[41][5]~1655                                               ; LCCOMB_X50_Y27_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[42][5]~431                                                ; LCCOMB_X50_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[43][5]~1290                                               ; LCCOMB_X41_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[44][5]~434                                                ; LCCOMB_X50_Y23_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[45][5]~1277                                               ; LCCOMB_X44_Y22_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[46][5]~457                                                ; LCCOMB_X43_Y23_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[47][5]~1303                                               ; LCCOMB_X43_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[48][5]~471                                                ; LCCOMB_X43_Y21_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[49][5]~485                                                ; LCCOMB_X57_Y23_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[4][5]~1511                                                ; LCCOMB_X43_Y21_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[50][5]~498                                                ; LCCOMB_X51_Y24_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[51][5]~1263                                               ; LCCOMB_X40_Y23_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[52][5]~511                                                ; LCCOMB_X43_Y21_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[53][5]~524                                                ; LCCOMB_X57_Y23_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[54][5]~537                                                ; LCCOMB_X51_Y24_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[55][5]~1316                                               ; LCCOMB_X40_Y23_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[56][5]~550                                                ; LCCOMB_X43_Y21_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[57][5]~563                                                ; LCCOMB_X57_Y23_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[58][5]~566                                                ; LCCOMB_X51_Y24_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[59][5]~1329                                               ; LCCOMB_X40_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[5][5]~776                                                 ; LCCOMB_X50_Y27_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[60][5]~590                                                ; LCCOMB_X47_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[61][5]~604                                                ; LCCOMB_X40_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[62][5]~617                                                ; LCCOMB_X51_Y24_N24 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[63][5]~1342                                               ; LCCOMB_X40_Y23_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[64][5]~630                                                ; LCCOMB_X39_Y23_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[65][5]~643                                                ; LCCOMB_X39_Y23_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[66][5]~656                                                ; LCCOMB_X42_Y20_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[67][5]~683                                                ; LCCOMB_X40_Y21_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[68][5]~709                                                ; LCCOMB_X39_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[69][5]~670                                                ; LCCOMB_X39_Y23_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[6][5]~1537                                                ; LCCOMB_X40_Y23_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[70][5]~696                                                ; LCCOMB_X42_Y20_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[71][5]~1355                                               ; LCCOMB_X40_Y16_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[72][5]~1054                                               ; LCCOMB_X42_Y22_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[73][5]~1368                                               ; LCCOMB_X42_Y22_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[74][5]~1093                                               ; LCCOMB_X38_Y16_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[75][5]~1067                                               ; LCCOMB_X40_Y21_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[76][5]~1070                                               ; LCCOMB_X42_Y20_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[77][5]~1381                                               ; LCCOMB_X40_Y21_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[78][5]~1120                                               ; LCCOMB_X38_Y16_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[79][5]~1394                                               ; LCCOMB_X40_Y21_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[7][5]~789                                                 ; LCCOMB_X40_Y21_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[80][5]~1107                                               ; LCCOMB_X50_Y27_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[81][5]~1146                                               ; LCCOMB_X39_Y23_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[82][5]~1133                                               ; LCCOMB_X41_Y27_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[83][5]~1407                                               ; LCCOMB_X40_Y21_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[84][5]~1159                                               ; LCCOMB_X50_Y27_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[85][5]~1198                                               ; LCCOMB_X39_Y23_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[86][5]~1172                                               ; LCCOMB_X41_Y27_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[87][5]~1420                                               ; LCCOMB_X40_Y21_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[88][5]~1185                                               ; LCCOMB_X50_Y27_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[89][5]~1250                                               ; LCCOMB_X42_Y22_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[8][5]~802                                                 ; LCCOMB_X43_Y21_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[90][5]~1211                                               ; LCCOMB_X37_Y23_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[91][5]~1433                                               ; LCCOMB_X37_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[92][5]~1224                                               ; LCCOMB_X50_Y27_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[93][5]~1237                                               ; LCCOMB_X40_Y21_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[94][5]~51                                                 ; LCCOMB_X42_Y21_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[95][5]~1446                                               ; LCCOMB_X40_Y21_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[96][5]~65                                                 ; LCCOMB_X46_Y23_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[97][5]~79                                                 ; LCCOMB_X57_Y23_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[98][5]~722                                                ; LCCOMB_X40_Y21_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[99][5]~93                                                 ; LCCOMB_X52_Y18_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; game_logic:game|tails[9][5]~815                                                 ; LCCOMB_X47_Y25_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1              ; 162     ; Clock                                 ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; PLL_1              ; 51      ; Clock                                 ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[4] ; PLL_1              ; 1564    ; Clock                                 ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; vga_controller:control|column[3]~1                                              ; LCCOMB_X61_Y23_N8  ; 10      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; vga_controller:control|h_count[0]~20                                            ; LCCOMB_X61_Y23_N28 ; 20      ; Clock enable, Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; vga_controller:control|row[8]~1                                                 ; LCCOMB_X60_Y23_N22 ; 9       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; vga_controller:control|v_count[1]~14                                            ; LCCOMB_X59_Y22_N30 ; 10      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; accel:accelerometer|spi_control:spi_ctrl|LessThan0~0                            ; LCCOMB_X55_Y33_N16 ; 17      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; accel:accelerometer|spi_control:spi_ctrl|data_tx[15]~2                          ; LCCOMB_X54_Y33_N4  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; accel:accelerometer|spi_control:spi_ctrl|data_tx[2]~4                           ; LCCOMB_X54_Y33_N16 ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[3]~0           ; LCCOMB_X54_Y33_N22 ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|data_tx_reg[15]~1    ; LCCOMB_X55_Y34_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_a|sw_change_f                                             ; LCCOMB_X32_Y27_N0  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_b|sw_change_f                                             ; LCCOMB_X39_Y12_N0  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_c|sw_change_f                                             ; LCCOMB_X60_Y19_N16 ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_d|sw_change_f                                             ; LCCOMB_X62_Y20_N0  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_e|sw_change_f                                             ; LCCOMB_X56_Y37_N4  ; 17      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; button_debouncer:dbns_e|sw_state_o                                              ; FF_X56_Y37_N17     ; 146     ; Async. clear                          ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; button_debouncer:dbns_e|sw_state_o                                              ; FF_X56_Y37_N17     ; 166     ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; direction[1]                                                                    ; LCCOMB_X57_Y32_N16 ; 19      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|always4~4                                                       ; LCCOMB_X37_Y23_N22 ; 1655    ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|snake_head_x[4]~0                                               ; LCCOMB_X57_Y32_N2  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|snake_head_y[4]~0                                               ; LCCOMB_X57_Y32_N26 ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tail_count[4]~15                                                ; LCCOMB_X36_Y22_N10 ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[0][5]~1725                                                ; LCCOMB_X42_Y28_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[100][5]~94                                                ; LCCOMB_X38_Y24_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[101][5]~1444                                              ; LCCOMB_X41_Y22_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[102][5]~107                                               ; LCCOMB_X37_Y21_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[103][5]~603                                               ; LCCOMB_X42_Y21_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[104][5]~1431                                              ; LCCOMB_X38_Y24_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[105][5]~1457                                              ; LCCOMB_X41_Y22_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[106][5]~1470                                              ; LCCOMB_X37_Y21_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[107][5]~1496                                              ; LCCOMB_X41_Y21_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[108][5]~1483                                              ; LCCOMB_X37_Y21_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[109][5]~1522                                              ; LCCOMB_X42_Y21_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[10][5]~190                                                ; LCCOMB_X41_Y32_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[110][5]~1509                                              ; LCCOMB_X37_Y21_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[111][5]~642                                               ; LCCOMB_X42_Y21_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[112][5]~1537                                              ; LCCOMB_X38_Y22_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[113][5]~1550                                              ; LCCOMB_X38_Y22_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[114][5]~1563                                              ; LCCOMB_X37_Y21_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[115][5]~1576                                              ; LCCOMB_X30_Y23_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[116][5]~1589                                              ; LCCOMB_X38_Y22_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[117][5]~1602                                              ; LCCOMB_X38_Y22_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[118][5]~1615                                              ; LCCOMB_X36_Y24_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[119][5]~629                                               ; LCCOMB_X36_Y24_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[11][5]~203                                                ; LCCOMB_X42_Y31_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[120][5]~1628                                              ; LCCOMB_X38_Y22_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[121][5]~1641                                              ; LCCOMB_X38_Y22_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[122][5]~1654                                              ; LCCOMB_X43_Y20_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[123][5]~1681                                              ; LCCOMB_X43_Y20_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[124][5]~1668                                              ; LCCOMB_X38_Y17_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[125][5]~1694                                              ; LCCOMB_X42_Y21_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[126][5]~1707                                              ; LCCOMB_X46_Y18_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[127][5]~1723                                              ; LCCOMB_X40_Y18_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[12][5]~217                                                ; LCCOMB_X42_Y31_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[13][5]~230                                                ; LCCOMB_X42_Y31_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[14][5]~243                                                ; LCCOMB_X43_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[15][5]~270                                                ; LCCOMB_X38_Y25_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[16][5]~708                                                ; LCCOMB_X43_Y15_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[17][5]~257                                                ; LCCOMB_X45_Y16_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[18][5]~722                                                ; LCCOMB_X46_Y21_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[19][5]~284                                                ; LCCOMB_X43_Y21_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[1][5]~681                                                 ; LCCOMB_X40_Y29_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[20][5]~735                                                ; LCCOMB_X40_Y16_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[21][5]~297                                                ; LCCOMB_X45_Y16_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[22][5]~761                                                ; LCCOMB_X46_Y21_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[23][5]~310                                                ; LCCOMB_X42_Y15_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[24][5]~787                                                ; LCCOMB_X40_Y16_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[25][5]~323                                                ; LCCOMB_X41_Y16_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[26][5]~748                                                ; LCCOMB_X46_Y21_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[27][5]~336                                                ; LCCOMB_X42_Y15_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[28][5]~774                                                ; LCCOMB_X45_Y16_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[29][5]~350                                                ; LCCOMB_X45_Y16_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[2][5]~655                                                 ; LCCOMB_X37_Y31_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[30][5]~800                                                ; LCCOMB_X46_Y17_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[31][5]~363                                                ; LCCOMB_X42_Y15_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[32][5]~814                                                ; LCCOMB_X43_Y15_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[33][5]~827                                                ; LCCOMB_X41_Y22_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[34][5]~841                                                ; LCCOMB_X42_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[35][5]~378                                                ; LCCOMB_X43_Y27_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[36][5]~863                                                ; LCCOMB_X44_Y24_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[37][5]~854                                                ; LCCOMB_X41_Y22_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[38][5]~880                                                ; LCCOMB_X43_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[39][5]~391                                                ; LCCOMB_X43_Y27_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[3][5]~121                                                 ; LCCOMB_X46_Y30_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[40][5]~893                                                ; LCCOMB_X44_Y24_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[41][5]~397                                                ; LCCOMB_X41_Y22_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[42][5]~919                                                ; LCCOMB_X43_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[43][5]~418                                                ; LCCOMB_X43_Y27_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[44][5]~906                                                ; LCCOMB_X43_Y23_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[45][5]~431                                                ; LCCOMB_X43_Y27_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[46][5]~932                                                ; LCCOMB_X43_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[47][5]~459                                                ; LCCOMB_X43_Y27_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[48][5]~946                                                ; LCCOMB_X42_Y28_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[49][5]~960                                                ; LCCOMB_X38_Y18_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[4][5]~668                                                 ; LCCOMB_X46_Y30_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[50][5]~973                                                ; LCCOMB_X37_Y26_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[51][5]~446                                                ; LCCOMB_X37_Y21_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[52][5]~986                                                ; LCCOMB_X38_Y25_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[53][5]~999                                                ; LCCOMB_X38_Y18_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[54][5]~1025                                               ; LCCOMB_X37_Y21_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[55][5]~472                                                ; LCCOMB_X37_Y21_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[56][5]~1012                                               ; LCCOMB_X40_Y29_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[57][5]~1051                                               ; LCCOMB_X38_Y18_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[58][5]~1038                                               ; LCCOMB_X37_Y21_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[59][5]~485                                                ; LCCOMB_X37_Y21_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[5][5]~135                                                 ; LCCOMB_X40_Y29_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[60][5]~1078                                               ; LCCOMB_X45_Y16_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[61][5]~1064                                               ; LCCOMB_X37_Y21_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[62][5]~1104                                               ; LCCOMB_X44_Y19_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[63][5]~498                                                ; LCCOMB_X37_Y21_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[64][5]~1091                                               ; LCCOMB_X47_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[65][5]~1117                                               ; LCCOMB_X47_Y23_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[66][5]~1130                                               ; LCCOMB_X40_Y23_N30 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[67][5]~1143                                               ; LCCOMB_X45_Y29_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[68][5]~52                                                 ; LCCOMB_X47_Y23_N6  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[69][5]~1146                                               ; LCCOMB_X47_Y23_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[6][5]~694                                                 ; LCCOMB_X43_Y23_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[70][5]~66                                                 ; LCCOMB_X40_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[71][5]~511                                                ; LCCOMB_X35_Y20_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[72][5]~1169                                               ; LCCOMB_X38_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[73][5]~564                                                ; LCCOMB_X40_Y23_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[74][5]~1182                                               ; LCCOMB_X40_Y23_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[75][5]~1195                                               ; LCCOMB_X35_Y20_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[76][5]~1208                                               ; LCCOMB_X40_Y23_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[77][5]~524                                                ; LCCOMB_X35_Y20_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[78][5]~1234                                               ; LCCOMB_X40_Y23_N28 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[79][5]~537                                                ; LCCOMB_X46_Y24_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[7][5]~148                                                 ; LCCOMB_X46_Y30_N12 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[80][5]~1249                                               ; LCCOMB_X38_Y22_N4  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[81][5]~1221                                               ; LCCOMB_X47_Y23_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[82][5]~1262                                               ; LCCOMB_X43_Y24_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[83][5]~544                                                ; LCCOMB_X40_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[84][5]~1275                                               ; LCCOMB_X43_Y22_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[85][5]~1288                                               ; LCCOMB_X47_Y23_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[86][5]~1301                                               ; LCCOMB_X43_Y24_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[87][5]~577                                                ; LCCOMB_X40_Y23_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[88][5]~1314                                               ; LCCOMB_X38_Y22_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[89][5]~1327                                               ; LCCOMB_X47_Y23_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[8][5]~162                                                 ; LCCOMB_X42_Y28_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[90][5]~1340                                               ; LCCOMB_X43_Y21_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[91][5]~590                                                ; LCCOMB_X46_Y21_N20 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[92][5]~1353                                               ; LCCOMB_X46_Y20_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[93][5]~1366                                               ; LCCOMB_X42_Y21_N10 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[94][5]~1379                                               ; LCCOMB_X46_Y17_N0  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[95][5]~616                                                ; LCCOMB_X46_Y21_N14 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[96][5]~1392                                               ; LCCOMB_X38_Y24_N22 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[97][5]~1418                                               ; LCCOMB_X41_Y22_N8  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[98][5]~80                                                 ; LCCOMB_X37_Y21_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[99][5]~1405                                               ; LCCOMB_X43_Y21_N26 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_logic:game|tails[9][5]~175                                                 ; LCCOMB_X40_Y29_N18 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_upd_clk:upd_clk|always2~6                                                  ; LCCOMB_X17_Y33_N22 ; 3       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; game_upd_clk:upd_clk|out_clk                                                    ; FF_X1_Y38_N9       ; 1557    ; Clock                                 ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1              ; 167     ; Clock                                 ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; PLL_1              ; 51      ; Clock                                 ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; vga_controller:control|column[1]~1                                              ; LCCOMB_X19_Y29_N0  ; 10      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; vga_controller:control|h_count[5]~16                                            ; LCCOMB_X19_Y29_N28 ; 20      ; Clock enable, Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; vga_controller:control|row[5]~1                                                 ; LCCOMB_X16_Y30_N26 ; 9       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; vga_controller:control|v_count[4]~16                                            ; LCCOMB_X15_Y30_N22 ; 10      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
 +---------------------------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                           ;
-+---------------------------------------------------------------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                            ; Location     ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------------------------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; button_debouncer:dbns_e|sw_state_o                                              ; FF_X38_Y9_N9 ; 150     ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1        ; 162     ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; PLL_1        ; 51      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] ; PLL_1        ; 1       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[4] ; PLL_1        ; 1564    ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
-+---------------------------------------------------------------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                             ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                            ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; button_debouncer:dbns_e|sw_state_o                                              ; FF_X56_Y37_N17 ; 146     ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; game_upd_clk:upd_clk|out_clk                                                    ; FF_X1_Y38_N9   ; 1557    ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1          ; 167     ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; PLL_1          ; 51      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] ; PLL_1          ; 1       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------+
@@ -1805,7 +1807,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+---------+
 ; Name                      ; Fan-Out ;
 +---------------------------+---------+
-; game_logic:game|always3~4 ; 1655    ;
+; game_logic:game|always4~4 ; 1655    ;
 +---------------------------+---------+
 
 
@@ -1814,91 +1816,93 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 7,496 / 148,641 ( 5 % ) ;
-; C16 interconnects     ; 87 / 5,382 ( 2 % )      ;
-; C4 interconnects      ; 4,467 / 106,704 ( 4 % ) ;
-; Direct links          ; 726 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 7,094 / 148,641 ( 5 % ) ;
+; C16 interconnects     ; 123 / 5,382 ( 2 % )     ;
+; C4 interconnects      ; 4,057 / 106,704 ( 4 % ) ;
+; Direct links          ; 501 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 5 / 20 ( 25 % )         ;
-; Local interconnects   ; 2,459 / 49,760 ( 5 % )  ;
+; Local interconnects   ; 2,306 / 49,760 ( 5 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 101 / 5,406 ( 2 % )     ;
-; R4 interconnects      ; 5,027 / 147,764 ( 3 % ) ;
+; R24 interconnects     ; 113 / 5,406 ( 2 % )     ;
+; R4 interconnects      ; 4,439 / 147,764 ( 3 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.05) ; Number of LABs  (Total = 377) ;
+; Number of Logic Elements  (Average = 13.05) ; Number of LABs  (Total = 344) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 53                            ;
-; 2                                           ; 13                            ;
-; 3                                           ; 9                             ;
-; 4                                           ; 7                             ;
-; 5                                           ; 0                             ;
-; 6                                           ; 3                             ;
+; 1                                           ; 28                            ;
+; 2                                           ; 10                            ;
+; 3                                           ; 2                             ;
+; 4                                           ; 6                             ;
+; 5                                           ; 2                             ;
+; 6                                           ; 0                             ;
 ; 7                                           ; 2                             ;
-; 8                                           ; 2                             ;
-; 9                                           ; 3                             ;
-; 10                                          ; 9                             ;
-; 11                                          ; 3                             ;
-; 12                                          ; 10                            ;
-; 13                                          ; 13                            ;
-; 14                                          ; 14                            ;
-; 15                                          ; 49                            ;
-; 16                                          ; 187                           ;
+; 8                                           ; 6                             ;
+; 9                                           ; 2                             ;
+; 10                                          ; 11                            ;
+; 11                                          ; 1                             ;
+; 12                                          ; 8                             ;
+; 13                                          ; 17                            ;
+; 14                                          ; 23                            ;
+; 15                                          ; 54                            ;
+; 16                                          ; 172                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.60) ; Number of LABs  (Total = 377) ;
+; LAB-wide Signals  (Average = 1.72) ; Number of LABs  (Total = 344) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 27                            ;
-; 1 Clock                            ; 302                           ;
-; 1 Clock enable                     ; 98                            ;
-; 1 Sync. clear                      ; 6                             ;
-; 2 Clock enables                    ; 172                           ;
+; 1 Async. clear                     ; 23                            ;
+; 1 Clock                            ; 298                           ;
+; 1 Clock enable                     ; 71                            ;
+; 1 Sync. clear                      ; 7                             ;
+; 1 Sync. load                       ; 1                             ;
+; 2 Clock enables                    ; 191                           ;
+; 2 Clocks                           ; 2                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 16.71) ; Number of LABs  (Total = 377) ;
+; Number of Signals Sourced  (Average = 18.17) ; Number of LABs  (Total = 344) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 38                            ;
-; 2                                            ; 22                            ;
-; 3                                            ; 8                             ;
-; 4                                            ; 7                             ;
-; 5                                            ; 6                             ;
-; 6                                            ; 1                             ;
-; 7                                            ; 0                             ;
-; 8                                            ; 1                             ;
+; 1                                            ; 24                            ;
+; 2                                            ; 6                             ;
+; 3                                            ; 4                             ;
+; 4                                            ; 6                             ;
+; 5                                            ; 1                             ;
+; 6                                            ; 3                             ;
+; 7                                            ; 3                             ;
+; 8                                            ; 4                             ;
 ; 9                                            ; 1                             ;
-; 10                                           ; 5                             ;
-; 11                                           ; 6                             ;
-; 12                                           ; 5                             ;
-; 13                                           ; 6                             ;
-; 14                                           ; 6                             ;
-; 15                                           ; 7                             ;
-; 16                                           ; 17                            ;
-; 17                                           ; 11                            ;
-; 18                                           ; 9                             ;
-; 19                                           ; 24                            ;
-; 20                                           ; 24                            ;
-; 21                                           ; 22                            ;
-; 22                                           ; 39                            ;
-; 23                                           ; 27                            ;
-; 24                                           ; 30                            ;
-; 25                                           ; 26                            ;
-; 26                                           ; 13                            ;
-; 27                                           ; 7                             ;
-; 28                                           ; 3                             ;
-; 29                                           ; 1                             ;
-; 30                                           ; 0                             ;
+; 10                                           ; 3                             ;
+; 11                                           ; 2                             ;
+; 12                                           ; 4                             ;
+; 13                                           ; 5                             ;
+; 14                                           ; 7                             ;
+; 15                                           ; 5                             ;
+; 16                                           ; 18                            ;
+; 17                                           ; 8                             ;
+; 18                                           ; 18                            ;
+; 19                                           ; 17                            ;
+; 20                                           ; 29                            ;
+; 21                                           ; 25                            ;
+; 22                                           ; 56                            ;
+; 23                                           ; 31                            ;
+; 24                                           ; 31                            ;
+; 25                                           ; 14                            ;
+; 26                                           ; 8                             ;
+; 27                                           ; 1                             ;
+; 28                                           ; 2                             ;
+; 29                                           ; 0                             ;
+; 30                                           ; 3                             ;
 ; 31                                           ; 0                             ;
 ; 32                                           ; 5                             ;
 +----------------------------------------------+-------------------------------+
@@ -1907,24 +1911,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.37) ; Number of LABs  (Total = 377) ;
+; Number of Signals Sourced Out  (Average = 7.99) ; Number of LABs  (Total = 344) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 53                            ;
-; 2                                               ; 24                            ;
-; 3                                               ; 13                            ;
-; 4                                               ; 12                            ;
-; 5                                               ; 6                             ;
-; 6                                               ; 15                            ;
-; 7                                               ; 11                            ;
-; 8                                               ; 24                            ;
-; 9                                               ; 25                            ;
-; 10                                              ; 39                            ;
-; 11                                              ; 43                            ;
-; 12                                              ; 39                            ;
-; 13                                              ; 35                            ;
-; 14                                              ; 15                            ;
-; 15                                              ; 11                            ;
+; 1                                               ; 32                            ;
+; 2                                               ; 16                            ;
+; 3                                               ; 14                            ;
+; 4                                               ; 10                            ;
+; 5                                               ; 9                             ;
+; 6                                               ; 17                            ;
+; 7                                               ; 30                            ;
+; 8                                               ; 49                            ;
+; 9                                               ; 45                            ;
+; 10                                              ; 37                            ;
+; 11                                              ; 27                            ;
+; 12                                              ; 24                            ;
+; 13                                              ; 9                             ;
+; 14                                              ; 9                             ;
+; 15                                              ; 4                             ;
 ; 16                                              ; 12                            ;
 +-------------------------------------------------+-------------------------------+
 
@@ -1932,45 +1936,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 18.97) ; Number of LABs  (Total = 377) ;
+; Number of Distinct Inputs  (Average = 20.21) ; Number of LABs  (Total = 344) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 1                             ;
-; 2                                            ; 14                            ;
-; 3                                            ; 19                            ;
-; 4                                            ; 23                            ;
-; 5                                            ; 8                             ;
-; 6                                            ; 10                            ;
-; 7                                            ; 5                             ;
-; 8                                            ; 5                             ;
+; 1                                            ; 0                             ;
+; 2                                            ; 6                             ;
+; 3                                            ; 9                             ;
+; 4                                            ; 19                            ;
+; 5                                            ; 5                             ;
+; 6                                            ; 3                             ;
+; 7                                            ; 2                             ;
+; 8                                            ; 8                             ;
 ; 9                                            ; 4                             ;
-; 10                                           ; 6                             ;
-; 11                                           ; 5                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 4                             ;
-; 14                                           ; 8                             ;
-; 15                                           ; 4                             ;
-; 16                                           ; 8                             ;
-; 17                                           ; 10                            ;
-; 18                                           ; 10                            ;
-; 19                                           ; 16                            ;
-; 20                                           ; 19                            ;
-; 21                                           ; 11                            ;
-; 22                                           ; 11                            ;
-; 23                                           ; 27                            ;
-; 24                                           ; 14                            ;
-; 25                                           ; 15                            ;
-; 26                                           ; 18                            ;
-; 27                                           ; 16                            ;
-; 28                                           ; 13                            ;
-; 29                                           ; 18                            ;
-; 30                                           ; 19                            ;
+; 10                                           ; 4                             ;
+; 11                                           ; 3                             ;
+; 12                                           ; 4                             ;
+; 13                                           ; 7                             ;
+; 14                                           ; 4                             ;
+; 15                                           ; 1                             ;
+; 16                                           ; 10                            ;
+; 17                                           ; 4                             ;
+; 18                                           ; 12                            ;
+; 19                                           ; 13                            ;
+; 20                                           ; 23                            ;
+; 21                                           ; 19                            ;
+; 22                                           ; 22                            ;
+; 23                                           ; 22                            ;
+; 24                                           ; 21                            ;
+; 25                                           ; 21                            ;
+; 26                                           ; 17                            ;
+; 27                                           ; 15                            ;
+; 28                                           ; 15                            ;
+; 29                                           ; 15                            ;
+; 30                                           ; 9                             ;
 ; 31                                           ; 7                             ;
-; 32                                           ; 7                             ;
-; 33                                           ; 2                             ;
-; 34                                           ; 7                             ;
-; 35                                           ; 6                             ;
-; 36                                           ; 3                             ;
+; 32                                           ; 4                             ;
+; 33                                           ; 5                             ;
+; 34                                           ; 5                             ;
+; 35                                           ; 3                             ;
+; 36                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2259,124 +2263,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                   ;
-+------------------------------------------------------+------------------------------------------------------+-------------------+
-; Source Clock(s)                                      ; Destination Clock(s)                                 ; Delay Added in ns ;
-+------------------------------------------------------+------------------------------------------------------+-------------------+
-; pll_inst|altpll_component|auto_generated|pll1|clk[4] ; pll_inst|altpll_component|auto_generated|pll1|clk[4] ; 6.3               ;
-+------------------------------------------------------+------------------------------------------------------+-------------------+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                 ;
-+---------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+
-; Source Register                                                     ; Destination Register                                                ; Delay Added in ns ;
-+---------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+
-; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[1] ; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[2] ; 0.057             ;
-; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[0] ; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[1] ; 0.057             ;
-; accel:accelerometer|spi_control:spi_ctrl|spi_state.INTERACT         ; accel:accelerometer|spi_control:spi_ctrl|read_index[0]              ; 0.057             ;
-; accel:accelerometer|spi_control:spi_ctrl|read_index[1]              ; accel:accelerometer|spi_control:spi_ctrl|data_tx[10]                ; 0.049             ;
-; vga_controller:control|v_count[9]                                   ; vga_controller:control|v_count[9]                                   ; 0.049             ;
-; vga_controller:control|h_count[9]                                   ; vga_controller:control|h_count[9]                                   ; 0.049             ;
-; game_logic:game|tails[1][1]                                         ; game_logic:game|tails[0][1]                                         ; 0.049             ;
-; game_logic:game|tails[2][3]                                         ; game_logic:game|tails[1][3]                                         ; 0.049             ;
-; game_logic:game|tails[1][10]                                        ; game_logic:game|tails[0][10]                                        ; 0.049             ;
-; game_logic:game|tails[3][1]                                         ; game_logic:game|tails[2][1]                                         ; 0.049             ;
-; game_logic:game|tails[4][3]                                         ; game_logic:game|tails[3][3]                                         ; 0.049             ;
-; game_logic:game|tails[4][10]                                        ; game_logic:game|tails[3][10]                                        ; 0.049             ;
-; game_logic:game|tails[7][1]                                         ; game_logic:game|tails[6][1]                                         ; 0.049             ;
-; game_logic:game|tails[7][3]                                         ; game_logic:game|tails[6][3]                                         ; 0.049             ;
-; game_logic:game|tails[7][10]                                        ; game_logic:game|tails[6][10]                                        ; 0.049             ;
-; game_logic:game|tails[11][10]                                       ; game_logic:game|tails[10][10]                                       ; 0.049             ;
-; game_logic:game|tails[11][1]                                        ; game_logic:game|tails[10][1]                                        ; 0.049             ;
-; game_logic:game|tails[13][1]                                        ; game_logic:game|tails[12][1]                                        ; 0.049             ;
-; game_logic:game|tails[13][3]                                        ; game_logic:game|tails[12][3]                                        ; 0.049             ;
-; game_logic:game|tails[13][10]                                       ; game_logic:game|tails[12][10]                                       ; 0.049             ;
-; game_logic:game|tails[16][1]                                        ; game_logic:game|tails[15][1]                                        ; 0.049             ;
-; game_logic:game|tails[16][3]                                        ; game_logic:game|tails[15][3]                                        ; 0.049             ;
-; game_logic:game|tails[16][10]                                       ; game_logic:game|tails[15][10]                                       ; 0.049             ;
-; game_logic:game|tails[18][1]                                        ; game_logic:game|tails[17][1]                                        ; 0.049             ;
-; game_logic:game|tails[18][10]                                       ; game_logic:game|tails[17][10]                                       ; 0.049             ;
-; game_logic:game|tails[20][1]                                        ; game_logic:game|tails[19][1]                                        ; 0.049             ;
-; game_logic:game|tails[22][3]                                        ; game_logic:game|tails[21][3]                                        ; 0.049             ;
-; game_logic:game|tails[20][3]                                        ; game_logic:game|tails[19][3]                                        ; 0.049             ;
-; game_logic:game|tails[22][10]                                       ; game_logic:game|tails[21][10]                                       ; 0.049             ;
-; game_logic:game|tails[23][1]                                        ; game_logic:game|tails[22][1]                                        ; 0.049             ;
-; game_logic:game|tails[26][10]                                       ; game_logic:game|tails[25][10]                                       ; 0.049             ;
-; game_logic:game|tails[27][1]                                        ; game_logic:game|tails[26][1]                                        ; 0.049             ;
-; game_logic:game|tails[27][3]                                        ; game_logic:game|tails[26][3]                                        ; 0.049             ;
-; game_logic:game|tails[30][1]                                        ; game_logic:game|tails[29][1]                                        ; 0.049             ;
-; game_logic:game|tails[30][3]                                        ; game_logic:game|tails[29][3]                                        ; 0.049             ;
-; game_logic:game|tails[28][10]                                       ; game_logic:game|tails[27][10]                                       ; 0.049             ;
-; game_logic:game|tails[31][10]                                       ; game_logic:game|tails[30][10]                                       ; 0.049             ;
-; game_logic:game|tails[33][3]                                        ; game_logic:game|tails[32][3]                                        ; 0.049             ;
-; game_logic:game|tails[33][10]                                       ; game_logic:game|tails[32][10]                                       ; 0.049             ;
-; game_logic:game|tails[35][1]                                        ; game_logic:game|tails[34][1]                                        ; 0.049             ;
-; game_logic:game|tails[36][3]                                        ; game_logic:game|tails[35][3]                                        ; 0.049             ;
-; game_logic:game|tails[37][1]                                        ; game_logic:game|tails[36][1]                                        ; 0.049             ;
-; game_logic:game|tails[37][10]                                       ; game_logic:game|tails[36][10]                                       ; 0.049             ;
-; game_logic:game|tails[40][1]                                        ; game_logic:game|tails[39][1]                                        ; 0.049             ;
-; game_logic:game|tails[39][3]                                        ; game_logic:game|tails[38][3]                                        ; 0.049             ;
-; game_logic:game|tails[40][10]                                       ; game_logic:game|tails[39][10]                                       ; 0.049             ;
-; game_logic:game|tails[42][1]                                        ; game_logic:game|tails[41][1]                                        ; 0.049             ;
-; game_logic:game|tails[44][1]                                        ; game_logic:game|tails[43][1]                                        ; 0.049             ;
-; game_logic:game|tails[44][3]                                        ; game_logic:game|tails[43][3]                                        ; 0.049             ;
-; game_logic:game|tails[44][10]                                       ; game_logic:game|tails[43][10]                                       ; 0.049             ;
-; game_logic:game|tails[46][3]                                        ; game_logic:game|tails[45][3]                                        ; 0.049             ;
-; game_logic:game|tails[47][10]                                       ; game_logic:game|tails[46][10]                                       ; 0.049             ;
-; game_logic:game|tails[49][1]                                        ; game_logic:game|tails[48][1]                                        ; 0.049             ;
-; game_logic:game|tails[49][3]                                        ; game_logic:game|tails[48][3]                                        ; 0.049             ;
-; game_logic:game|tails[49][10]                                       ; game_logic:game|tails[48][10]                                       ; 0.049             ;
-; game_logic:game|tails[51][1]                                        ; game_logic:game|tails[50][1]                                        ; 0.049             ;
-; game_logic:game|tails[52][3]                                        ; game_logic:game|tails[51][3]                                        ; 0.049             ;
-; game_logic:game|tails[52][10]                                       ; game_logic:game|tails[51][10]                                       ; 0.049             ;
-; game_logic:game|tails[55][1]                                        ; game_logic:game|tails[54][1]                                        ; 0.049             ;
-; game_logic:game|tails[55][3]                                        ; game_logic:game|tails[54][3]                                        ; 0.049             ;
-; game_logic:game|tails[58][3]                                        ; game_logic:game|tails[57][3]                                        ; 0.049             ;
-; game_logic:game|tails[57][10]                                       ; game_logic:game|tails[56][10]                                       ; 0.049             ;
-; game_logic:game|tails[61][1]                                        ; game_logic:game|tails[60][1]                                        ; 0.049             ;
-; game_logic:game|tails[60][3]                                        ; game_logic:game|tails[59][3]                                        ; 0.049             ;
-; game_logic:game|tails[61][10]                                       ; game_logic:game|tails[60][10]                                       ; 0.049             ;
-; game_logic:game|tails[63][1]                                        ; game_logic:game|tails[62][1]                                        ; 0.049             ;
-; game_logic:game|tails[66][1]                                        ; game_logic:game|tails[65][1]                                        ; 0.049             ;
-; game_logic:game|tails[66][3]                                        ; game_logic:game|tails[65][3]                                        ; 0.049             ;
-; game_logic:game|tails[64][10]                                       ; game_logic:game|tails[63][10]                                       ; 0.049             ;
-; game_logic:game|tails[69][1]                                        ; game_logic:game|tails[68][1]                                        ; 0.049             ;
-; game_logic:game|tails[72][3]                                        ; game_logic:game|tails[71][3]                                        ; 0.049             ;
-; game_logic:game|tails[68][3]                                        ; game_logic:game|tails[67][3]                                        ; 0.049             ;
-; game_logic:game|tails[69][10]                                       ; game_logic:game|tails[68][10]                                       ; 0.049             ;
-; game_logic:game|tails[73][1]                                        ; game_logic:game|tails[72][1]                                        ; 0.049             ;
-; game_logic:game|tails[75][1]                                        ; game_logic:game|tails[74][1]                                        ; 0.049             ;
-; game_logic:game|tails[75][3]                                        ; game_logic:game|tails[74][3]                                        ; 0.049             ;
-; game_logic:game|tails[74][10]                                       ; game_logic:game|tails[73][10]                                       ; 0.049             ;
-; game_logic:game|tails[79][1]                                        ; game_logic:game|tails[78][1]                                        ; 0.049             ;
-; game_logic:game|tails[79][3]                                        ; game_logic:game|tails[78][3]                                        ; 0.049             ;
-; game_logic:game|tails[80][10]                                       ; game_logic:game|tails[79][10]                                       ; 0.049             ;
-; game_logic:game|tails[82][3]                                        ; game_logic:game|tails[81][3]                                        ; 0.049             ;
-; game_logic:game|tails[84][1]                                        ; game_logic:game|tails[83][1]                                        ; 0.049             ;
-; game_logic:game|tails[84][10]                                       ; game_logic:game|tails[83][10]                                       ; 0.049             ;
-; game_logic:game|tails[86][1]                                        ; game_logic:game|tails[85][1]                                        ; 0.049             ;
-; game_logic:game|tails[86][3]                                        ; game_logic:game|tails[85][3]                                        ; 0.049             ;
-; game_logic:game|tails[89][1]                                        ; game_logic:game|tails[88][1]                                        ; 0.049             ;
-; game_logic:game|tails[89][10]                                       ; game_logic:game|tails[88][10]                                       ; 0.049             ;
-; game_logic:game|tails[91][10]                                       ; game_logic:game|tails[90][10]                                       ; 0.049             ;
-; game_logic:game|tails[92][1]                                        ; game_logic:game|tails[91][1]                                        ; 0.049             ;
-; game_logic:game|tails[92][3]                                        ; game_logic:game|tails[91][3]                                        ; 0.049             ;
-; game_logic:game|tails[93][10]                                       ; game_logic:game|tails[92][10]                                       ; 0.049             ;
-; game_logic:game|tails[95][3]                                        ; game_logic:game|tails[94][3]                                        ; 0.049             ;
-; game_logic:game|tails[96][10]                                       ; game_logic:game|tails[95][10]                                       ; 0.049             ;
-; game_logic:game|tails[100][1]                                       ; game_logic:game|tails[99][1]                                        ; 0.049             ;
-; game_logic:game|tails[100][3]                                       ; game_logic:game|tails[99][3]                                        ; 0.049             ;
-; game_logic:game|tails[100][10]                                      ; game_logic:game|tails[99][10]                                       ; 0.049             ;
-; game_logic:game|tails[105][1]                                       ; game_logic:game|tails[104][1]                                       ; 0.049             ;
-; game_logic:game|tails[105][3]                                       ; game_logic:game|tails[104][3]                                       ; 0.049             ;
-; game_logic:game|tails[107][1]                                       ; game_logic:game|tails[106][1]                                       ; 0.049             ;
-; game_logic:game|tails[106][10]                                      ; game_logic:game|tails[105][10]                                      ; 0.049             ;
-+---------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                      ;
++------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; Source Register                                                        ; Destination Register                                                  ; Delay Added in ns ;
++------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[1]    ; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[2]   ; 0.057             ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[0]    ; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|count[1]   ; 0.057             ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_state.INTERACT            ; accel:accelerometer|spi_control:spi_ctrl|read_index[0]                ; 0.057             ;
+; button_debouncer:dbns_b|sw_r[1]                                        ; button_debouncer:dbns_b|sw_down_o                                     ; 0.053             ;
+; button_debouncer:dbns_c|sw_r[1]                                        ; button_debouncer:dbns_c|sw_down_o                                     ; 0.053             ;
+; button_debouncer:dbns_d|sw_r[1]                                        ; button_debouncer:dbns_d|sw_down_o                                     ; 0.053             ;
+; button_debouncer:dbns_a|sw_r[1]                                        ; button_debouncer:dbns_a|sw_down_o                                     ; 0.053             ;
+; vga_controller:control|v_count[9]                                      ; vga_controller:control|v_count[9]                                     ; 0.053             ;
+; vga_controller:control|h_count[9]                                      ; vga_controller:control|h_count[9]                                     ; 0.053             ;
+; game_upd_clk:upd_clk|drawing_cycles_passed[1]                          ; game_upd_clk:upd_clk|drawing_cycles_passed[2]                         ; 0.053             ;
+; accel:accelerometer|spi_control:spi_ctrl|init_index[0]                 ; accel:accelerometer|spi_control:spi_ctrl|init_index[1]                ; 0.044             ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_state.TRANSFER            ; accel:accelerometer|spi_control:spi_ctrl|start                        ; 0.034             ;
+; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|state.STALL ; accel:accelerometer|spi_control:spi_ctrl|spi_serdes:serdes|state.IDLE ; 0.028             ;
++------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 13 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2387,12 +2302,11 @@ Info (20030): Parallel compilation is enabled and will use 16 of the 16 processo
 Info (119006): Selected device 10M50DAF484C7G for design "sberday_de10lite"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (15564): Compensate clock of PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" has been set to clock4 File: C:/MIET/Snake/db/pll_altpll.v Line: 45
+Warning (15564): Compensate clock of PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" has been set to clock1 File: C:/MIET/Snake/db/pll_altpll.v Line: 45
 Info (15535): Implemented PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" as MAX 10 PLL type File: C:/MIET/Snake/db/pll_altpll.v Line: 45
     Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] port File: C:/MIET/Snake/db/pll_altpll.v Line: 45
     Info (15099): Implementing clock multiplication of 1, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] port File: C:/MIET/Snake/db/pll_altpll.v Line: 45
     Info (15099): Implementing clock multiplication of 1, clock division of 25, and phase shift of 270 degrees (375000 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] port File: C:/MIET/Snake/db/pll_altpll.v Line: 45
-    Info (15099): Implementing clock multiplication of 1, clock division of 50, and phase shift of 0 degrees (0 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[4] port File: C:/MIET/Snake/db/pll_altpll.v Line: 45
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -2432,11 +2346,12 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 2 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[1]} {pll_inst|altpll_component|auto_generated|pll1|clk[1]}
     Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[2]} {pll_inst|altpll_component|auto_generated|pll1|clk[2]}
     Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -phase 270.00 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[3]} {pll_inst|altpll_component|auto_generated|pll1|clk[3]}
-    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 50 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[4]} {pll_inst|altpll_component|auto_generated|pll1|clk[4]}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Warning (332060): Node: game_upd_clk:upd_clk|out_clk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register game_logic:game|tail_count[4] is being clocked by game_upd_clk:upd_clk|out_clk
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
-Info (332111): Found 7 clocks
+Info (332111): Found 6 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):  100.000   ADC_CLK_10
@@ -2445,15 +2360,16 @@ Info (332111): Found 7 clocks
     Info (332111):   40.000 pll_inst|altpll_component|auto_generated|pll1|clk[1]
     Info (332111):  500.000 pll_inst|altpll_component|auto_generated|pll1|clk[2]
     Info (332111):  500.000 pll_inst|altpll_component|auto_generated|pll1|clk[3]
-    Info (332111): 1000.000 pll_inst|altpll_component|auto_generated|pll1|clk[4]
-Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C1 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C2 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G17
-Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] (placed in counter C3 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G16
-Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[4] (placed in counter C0 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
+Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C0 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
+Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C1 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
+Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[3] (placed in counter C2 of PLL_1) File: C:/MIET/Snake/db/pll_altpll.v Line: 80
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G17
+Info (176353): Automatically promoted node game_upd_clk:upd_clk|out_clk  File: C:/MIET/Snake/game_upd_clk.v Line: 6
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node game_upd_clk:upd_clk|was_updated~0 File: C:/MIET/Snake/game_upd_clk.v Line: 7
 Info (176353): Automatically promoted node button_debouncer:dbns_e|sw_state_o  File: C:/MIET/Snake/button_debouncer.v Line: 8
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
@@ -2463,10 +2379,10 @@ Info (176353): Automatically promoted node button_debouncer:dbns_e|sw_state_o  F
         Info (176357): Destination node button_debouncer:dbns_e|sw_change_f File: C:/MIET/Snake/button_debouncer.v Line: 23
         Info (176357): Destination node game_logic:game|is_tail File: C:/MIET/Snake/game_logic.sv Line: 21
         Info (176357): Destination node vga_controller:control|column~0 File: C:/MIET/Snake/vga_controller.v Line: 18
-        Info (176357): Destination node vga_controller:control|column[3]~1 File: C:/MIET/Snake/vga_controller.v Line: 30
+        Info (176357): Destination node vga_controller:control|column[1]~1 File: C:/MIET/Snake/vga_controller.v Line: 30
         Info (176357): Destination node vga_controller:control|row~0 File: C:/MIET/Snake/vga_controller.v Line: 20
-        Info (176357): Destination node vga_controller:control|row[8]~1 File: C:/MIET/Snake/vga_controller.v Line: 30
-        Info (176357): Destination node vga_controller:control|row~2 File: C:/MIET/Snake/vga_controller.v Line: 20
+        Info (176357): Destination node vga_controller:control|row[5]~1 File: C:/MIET/Snake/vga_controller.v Line: 30
+        Info (176357): Destination node vga_controller:control|column~2 File: C:/MIET/Snake/vga_controller.v Line: 18
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -2484,8 +2400,8 @@ Info (170195): Router estimated average interconnect usage is 3% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 1.04 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.33 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2653,11 +2569,11 @@ Warning (169064): Following 71 pins have no output enable or a GND or VCC output
     Info (169065): Pin ARDUINO_IO[6] has a permanently disabled output enable File: C:/MIET/Snake/sberday_de10lite.v Line: 44
     Info (169065): Pin ARDUINO_IO[7] has a permanently disabled output enable File: C:/MIET/Snake/sberday_de10lite.v Line: 44
 Info (144001): Generated suppressed messages file C:/MIET/Snake/sberday_de10lite.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 6665 megabytes
-    Info: Processing ended: Sat Mar 30 14:55:20 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 6660 megabytes
+    Info: Processing ended: Sat Mar 30 16:16:37 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +----------------------------+

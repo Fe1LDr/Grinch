@@ -216,8 +216,8 @@ module sberday_de10lite (
       always @(posedge vga_clk) begin
         if (disp_ena == 1'b1) begin
           VGA_R <= red  ;
+			 VGA_G <= green;
           VGA_B <= blue ;
-          VGA_G <= green;
         end 
         else begin
           VGA_R <= 4'd0;
@@ -259,7 +259,7 @@ module sberday_de10lite (
 		.entity(ent),
 		.red(red),
 		.green(green),
-		.blue(blue),
+		.blue(blue)
 	 );
 	 
 	 reg [1:0] direction;
@@ -267,19 +267,19 @@ module sberday_de10lite (
 	 wire [7:0] game_score;
 	 
 	 always begin
-		  if (js_button_a_d) 
+		  if (js_button_d_d) 
 			direction = 2'b00;
-		  else if (js_button_b_d) 
+		  else if (js_button_a_d) 
 			direction = 2'b01;
-		  else if (js_button_c_d)
+		  else if (js_button_b_d)
 			direction = 2'b10;
-		  else if (js_button_d_d) 
+		  else if (js_button_c_d) 
 			direction = 2'b11;
 	 end
 	 
 	 game_logic game (
 	     .vga_clk (vga_clk),
-		  .update_clk (btn_clk),
+		  .update_clk (update_clk),
 		  .reset (arst_n),
 		  .direction(direction),
 		  .x_in(col[9:0]),
@@ -289,5 +289,15 @@ module sberday_de10lite (
 		  //.game_won,
 		  .tail_count(game_score)
 	 );
+	 
+	 wire update_clk;
+	 
+	 game_upd_clk upd_clk(
+		.in_clk(vga_clk),
+		.reset(arst_n),
+		.x_in(col[9:0]),
+		.y_in(row[8:0]),
+		.out_clk(update_clk)
+	);
 
 endmodule

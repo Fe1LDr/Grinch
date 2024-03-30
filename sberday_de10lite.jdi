@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="e025815574d664f7cd12"/>
+    <hash md5_digest_80b="f76df99cf9e3779a7ae1"/>
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="sberday_de10lite.sof" usercode="0xFFFFFFFF"/>
@@ -8,7 +8,7 @@
   <sld_infos>
     <sld_info hpath="adc0:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME adc0 HAS_SOPCINFO 1 GENERATION_ID 1711799692"/>
+        <assignment_value text="QSYS_NAME adc0 HAS_SOPCINFO 1 GENERATION_ID 1711804570"/>
       </assignment_values>
       <parameters/>
     </sld_info>
